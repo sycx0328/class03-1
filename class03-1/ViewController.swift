@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lblTestClicked: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -62,4 +65,18 @@ class ViewController: UIViewController {
     func add(first : Int, second : Int) -> Int {
         return first + second
     }
+    
+    @IBAction func btnTestClicked(_ sender: UIButton) {
+        lblTestClicked.text = "Hi, Apple World."
+    }
+    
+    @IBAction func btnTest2Clicked(_ sender: UIButton) {
+        lblTestClicked.text = "Hi, StoryBoard."
+        
+    }
+    
+    
+    
+    
+    
 }
